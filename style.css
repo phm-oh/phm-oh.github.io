@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #464545;
+  }
+  
+  nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  nav h1 {
+    margin: 10 20px;
+    color: #fff ;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  select {
+    padding: 6px;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 10px;
+    width: 180px;
+    border-radius: 5px;
+  }
+  
+  .superContainer{
+  
+    width: 300px;
+    height: 350px;
+    margin: 20px 15px;
+    background-color: #333232;
+    position: relative;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  .title{
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+  
+  .content div:hover{
+    opacity: 90%;
+    transform: scale(0.98);
+  }
+  
+  .rateContainer {
+    margin:30px 2px;
+    z-index: 10;
+    border-radius: 60px;
+    background-color: rgb(231, 233, 227);
+    position:absolute;
+    width:45px;
+    height: 45px;
+    border: 1.8px solid #292828;
+    
+    box-shadow: 0 6px rgba(0, 0, 0, 0.12);
+    padding: 8.5px;
+  } 
+  .rate_text{
+    /* position:absolute; */
+    
+    font-size: 20px;
+    color: rgb(31, 29, 1);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  
+     
+  }
+  .pagination{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: #292828;
+    justify-content: center;
+  }
+  
+  .pagecontainer{
+    
+    margin: 5px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 60px;
+    align-content: center;
+  }
+  .pagecontainer a{
+    z-index: 100;
+    font-size: 20px;
+    margin: 4px;
+    font-weight: 600;
+    color: aliceblue;
+  }
+  .pagecontainer a:hover{
+    font-size: 24px;
+    margin: 4px;
+    font-weight: 800;
+    color: rgb(14, 88, 153);
+    cursor: pointer;
+  }
+
+  .pagecontainer .currentpage{
+    color: red;
+  }
