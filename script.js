@@ -134,6 +134,7 @@ const onPageChange = (p)=>{
     const searchdiv = document.getElementById('search')
     const searchInput = document.createElement('input') 
     searchInput.type ="text"
+    searchInput.setAttribute('placeholder',"ค้นหา")
     console.log(searchInput);
     searchInput.addEventListener('change',()=>{searchMovies(searchInput.value)})
     searchdiv.appendChild(searchInput)
